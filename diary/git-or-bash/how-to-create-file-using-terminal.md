@@ -1,5 +1,0 @@
-## ﻿how to create file using terminal
-
-```bash
-echo "what to put in the file" >> file.md
-```
