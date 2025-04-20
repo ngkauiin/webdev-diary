@@ -1,7 +1,7 @@
 ﻿## how to push on git
 
 ```bash
-git add . #track all the file in the directory
-git commit -m "commit comment"
-git push #push all the update onto repo
+git add . # stage all modified files
+git commit -m "commit comment" #save the changes with a comment
+git push # send the changes and comments to github
 ```
