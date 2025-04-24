@@ -21,7 +21,7 @@ flex-item basic properties:
 
 `flex: <number [1,inf]>` = `flex: <number> 1 0`: grow proportionally.
 
-`flex: initial` = `flex: 0 1 auto`: doesn't grow but can shrink.
+`flex: initial` (Default) = `flex: 0 1 auto`: doesn't grow but can shrink.
 
 `flex: auto` = `flex: 1 1 auto`: can grow and shrink. (fully flexible)
 
