@@ -1,5 +1,5 @@
 # Flexbox
-[Great tips about flexbox (including min-width, auto margins)](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+[Great Interactive flexbox and tips (including min-width, auto margins)](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
 
 flex-container basic properties:
 ```css
@@ -61,6 +61,17 @@ With the basis set to `0`, those items would ignore the item’s width, and ever
 `flex-basis` refers to `height` instead of `width` when `flex-direction: column`
 
 `flex-direction: column` needs to have `flex: 1 1 auto`, `flex: 1` won't work as expected unless the parent is given a height, or to use `flex-grow: 1`. [See explanation](https://www.theodinproject.com/lessons/foundations-axes)
+
+> [!TIP]
+> Simple method to position header and footer properly using column flexbox
+```css
+body {
+  height: 100vh; /* give the body a 100% page height so the content can expand*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* take up all the avaliable space*/
+}
+```
 
 ## Direction
 `justify-content` aligns items across the <b>main axis</b>
