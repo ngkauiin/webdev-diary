@@ -44,3 +44,63 @@ alert( !!null ); // false
 ```js
 condition ? run this code : run this code instead`
 ```
+
+## Function [:link:](https://javascript.info/function-basics)
+A function should do exactly what is suggested by its name, no more.
+
+Two independent actions usually deserve two functions, even if they are usually called together (in that case we can make a 3rd function that calls those two).
+
+>[!TIP]
+> **Functions == Comments**\
+> Functions can be created even if we don’t intend to reuse them. They structure the code and make it readable.
+
+### Function expressions 
+Function is a value, Callback functions/Callbacks.
+[Explanation](https://javascript.info/function-expressions)
+
+**Function Decalaration** and **Function Expression** example:
+```js
+// Function Declaration
+function sum(a, b) {
+  return a + b;
+}
+
+// Function Expression
+let sum = function(a, b) {
+  return a + b;
+};
+```
+
+> [!NOTE]
+> In strict mode, when a **Function Declaration** is within a code block, it’s visible everywhere inside that block. But **not outside of it**.\
+> To use it outside of block - use **Function Expression** and assign that outside of the block first.
+
+### Arrow Function
+Arrow Functions are function expressions
+```js
+// arrow functions
+let func = (arg1, arg2, ..., argN) => expression;
+
+// full version of the above arrow functions
+let func = function(arg1, arg2, ..., argN) {
+  return expression;
+};
+```
+[Another example: ](https://javascript.info/arrow-functions-basics)
+```js
+// full version
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+
+// arrow function of above
+ask(
+  "Do you agree?",
+  () => alert("You agreed."), // arrow function
+  () => alert("You canceled the execution.") // arrow function
+);
+```
+
+### Function Call Stack
