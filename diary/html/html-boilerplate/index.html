@@ -3,21 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
+    <!-- <script src="js-file.js" defer></script> -->
   </head>
 
   <body>
     <h1>Hello World!</h1>
+    <div id="container"></div>
   </body>
-</html>
+  <script>
+    // practice DOM manipulation
+    const container = document.querySelector("#container");
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+    const content = document.createElement("div");
+    content.classList.add("content");
+    content.textContent = "This is the glorious text-content!";
+
+    container.appendChild(content);
+
+    const p = document.createElement("p");
+    p.textContent = "Hey I'm red";
+    container.appendChild(p);
+
+    const hThree = document.createElement("h3");
+    hThree.textContent = "I'm a blue h3!";
+    container.appendChild(hThree);
+
+    const div = document.createElement('div');
+    div.style.backgroundColor = 'pink';
+    div.style.borderStyle = "solid";
+
+    const hOne = document.createElement('h1');
+    hOne.textContent = "I'm in a div";
+
+    const div_p = document.createElement('p');
+    div_p.textContent = "ME TOO!";
+
+    div.appendChild(hOne);
+    div.appendChild(div_p);
+    container.appendChild(div);
+  </script>
 </html>
