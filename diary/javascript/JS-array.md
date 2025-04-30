@@ -30,4 +30,35 @@ fruits.splice(0,2); // ["Apple","Mango"]
 
 // DOESN'T CHANGE original array
 const newFruits = fruits.slice(3); // newFruits = ["Mango"]
+
+// toSpliced(x,y) - similar to splice but DOESN'T CHANGE original array
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(1, 1); // ["Jan","Mar","Apr"]
 ```
+
+```js
+// remove multiple items from array
+const removeFromArray = function(array, ...removeItem) {
+  let i = 0;
+  while (i<removeItem.length) {
+    array = array.filter(matchItem);
+    i++;
+  }
+  return array;
+
+  function matchItem(item) {
+    return item !== removeItem[i];
+  }
+};
+```
+
+# Manipulate the array
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.toString(); // ["Banana,Orange,Apple,Mango"]
+
+// convert a multi dimensional array into a 1D array
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat(); // newArr = [1,2,3,4,5,6];
+```
+

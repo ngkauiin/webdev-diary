@@ -106,6 +106,16 @@ ask(
 ### Function Call Stack
 *empty*
 
+### Optional Arguments
+```js
+// ...optArg are stored as an array with any number of arguments 
+function func_1(...optArg) {
+  return optArg;
+}
+
+func_1(3,2); // returns [3,2]
+```
+
 # LOOP [:link:](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops)
 ### The for... of loop
 ```js
