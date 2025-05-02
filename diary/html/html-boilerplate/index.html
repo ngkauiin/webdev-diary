@@ -9,6 +9,7 @@
   <body>
     <h1>Hello World!</h1>
     <div id="container"></div>
+    <button id="btn">Click Me</button>
   </body>
   <script>
     // practice DOM manipulation
@@ -41,5 +42,8 @@
     div.appendChild(hOne);
     div.appendChild(div_p);
     container.appendChild(div);
+
+    const btn = document.querySelector('#btn');
+    btn.onclick = (e) => console.log(e.target);
   </script>
 </html>
