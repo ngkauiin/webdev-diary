@@ -52,6 +52,12 @@ flex-item basic properties:
 ### flex-basis
 With the basis set to `0`, those items would ignore the item’s width, and everything would shrink evenly. Using `auto` as a `flex-basis` tells the item to check for a width declaration
 
+#### Fixing number of item in a row (`flex-direction: row`)
+To do that change `flex-basis` to be a percentage. E.g. if you want 4 items in a row, set `flex: 1 0 21%;`, although `100/4=25%`, the `21%` is account for any margins.
+[Source with example and full explanation](https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row)
+
+
+
 ## Axes
 [Useful flexbox cheatsheet](https://flexbox.malven.co/)
 
